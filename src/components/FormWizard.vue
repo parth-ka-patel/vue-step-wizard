@@ -6,7 +6,7 @@
             </div>
         </div>
         <ul class="step-pills">
-            <li @click.prevent.stop="selectTab(index)" class="step-item" :class="{ 'active': tab.isActive, 'validated': tab.isValidated }" v-for="(tab, index) in tabs" v-bind:key="`tab-${index}`">
+            <li @click.prevent.stop="selectTab(index)" class="step-item" :class="{ 'active': tab.isActive && tab.isVisible, 'validated': tab.isValidated }" v-for="(tab, index) in tabs" v-bind:key="`tab-${index}`">
                 <a class="step-link" href="#">
                         <span class="tabStatus">{{index+1}} </span> 
                         <span class="tabLabel">{{tab.title}}</span>

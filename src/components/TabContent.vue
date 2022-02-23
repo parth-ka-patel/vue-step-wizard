@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isActive">
+    <div v-if="isActive && isVisible">
         <slot></slot>
     </div>
 </template>
@@ -14,16 +14,21 @@ export default {
         title: {
             type: String,
             required: true
+        },
+        visible:{
+          default: true,
         }
     },
     data(){
         return{
             isActive: false,
             isValidated : false,
+            isVisible : true,
         }
     },
     created(){
         this.isActive = this.selected;
+        this.isVisible = this.visible;
     }
 }
 </script>
