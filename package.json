@@ -1,14 +1,14 @@
 {
-  "name": "vue-step-wizard",
+  "name": "parth-vue-step-wizard",
   "description": "A simple vuejs step/form wizard plugin",
-  "version": "0.1.17",
+  "version": "0.1.0",
   "private": false,
   "author": {
-    "name": "Tushar Gugnani",
-    "email": "tushar@5balloons.info"
+    "name": "Parth KaPatel",
+    "email": "parth9427@gmail.com"
   },
-  "repository": "https://github.com/tushargugnani/vue-step-wizard",
-  "bugs": "https://github.com/tushargugnani/vue-step-wizard/issues",
+  "repository": "https://github.com/parth-ka-patel/vue-step-wizard",
+  "bugs": "https://github.com/parth-ka-patel/vue-step-wizard/issues",
   "keywords": [
     "vue form wizard",
     "vue stepper",
