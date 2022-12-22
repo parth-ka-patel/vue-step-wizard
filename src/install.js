@@ -3,11 +3,11 @@ import TabContent from "./components/TabContent.vue";
 import ValidationHelper from './components/ValidationHelper.vue';
 
 const VueStepWizard = {
- install(Vue) {
+ install(app) {
   // Let's register our component globally
   // https://vuejs.org/v2/guide/components-registration.html
-    Vue.component("form-wizard", FormWizard);
-    Vue.component("tab-content", TabContent);
+     app.component("form-wizard", FormWizard);
+     app.component("tab-content", TabContent);
  }
 };
 
